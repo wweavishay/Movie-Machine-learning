@@ -1,7 +1,5 @@
 
-## IMDB Movie Database Django Project
-This Django project is designed to showcase the utilization of machine learning algorithms with an IMDB movie database. The project utilizes Django, a Python-based web framework, to create a web application that interacts with the IMDB movie dataset and employs machine learning for certain functionalities.
-
+# IMDB Movie Database Django Project
 ## Project goal
 This Django project aims to empower users by showcasing machine learning prediction results within an IMDB movie database. Leveraging Django's functionalities, the project allows users to seamlessly interact with the dataset, providing insights generated through machine learning algorithms.
 
