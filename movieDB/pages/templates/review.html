@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+<head>
+<style>
+    th{
+        max-width: 100px;
+        text-align: center;
+    }
+    td{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100px;
+    }
+    </style>
+</head>
+
+
+
+<div align="right" >
+
+</div>
+
+
+
+
+
+
+<form action="" method="POST">
+    {% csrf_token %}
+  <table class="table table-hover table-sm">
+        <thead class="thead-light" data-file-width="5px">
+      <tr >
+
+        <th>text </th>
+        <th>type</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% if df %}
+    {% for i in df %}
+      <tr >
+          <td width="80%">    {{i.text}} </td>
+
+            <td contenteditable="true">{{i.type}}</td>
+
+          <td>  <input type="hidden" name='row_value' value="{{i.text}}"> </td>
+
+      </tr>
+    {% endfor %}
+    {% endif %}
+    </tbody>
+  </table>
+<br> <br >
+
+ <div class="pagination">
+
+
+
+    </div>
+
+</form>
+
+
+</body>
+</html>
+
+
+{% endblock %}
